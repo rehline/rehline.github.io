@@ -4,37 +4,33 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta name="description" content="Regularized Composite ReLU-ReHU Loss Minimization with Linear Computation and Linear Convergence">
+  <meta property="og:title" content="ReHLine"/>
+  <meta property="og:description" content="Regularized Composite ReLU-ReHU Loss Minimization with Linear Computation and Linear Convergence"/>
+  <meta property="og:url" content="https://rehline.github.io"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+  <meta property="og:image" content="static/images/logo.png" />
+  <meta property="og:image:width" content="300"/>
+  <meta property="og:image:height" content="300"/>
 
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <meta name="twitter:title" content="ReHLine">
+  <meta name="twitter:description" content="Regularized Composite ReLU-ReHU Loss Minimization with Linear Computation and Linear Convergence">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:image" content="static/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="optimization, empirical risk minimization, coordinate descent">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
 
   <title> ReHLine </title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://github.com/softmin"
-  rel="stylesheet">
+  <link href="https://github.com/softmin/ReHLine" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -79,63 +75,72 @@
 </head>
 <body>
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container">
-        <div class="columns is-centered">
-          <!-- <a href="https://github.com/softmin/ReHLine"><img src="static/images/logo.png" align="left" height="64" /></a> -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <!-- <a href="https://github.com/softmin/ReHLine"><img src="static/images/logo.png" align="left" height="64" /></a> -->
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">ReHLine: Regularized Composite ReLU-ReHU Loss Minimization with Linear Computation and Linear Convergence</h1>
+          <img src="static/images/logo.png" style="height: 180px;" /> 
+          <div class="is-size-5 publication-authors">
+            <!-- Paper authors -->
+            <span class="author-block"><a href="https://www.bendai.org/" target="_blank">Ben Dai</a><sup>*,1</sup>,</span>
+            <span class="author-block"><a href="https://statr.me/about/" target="_blank">Yixuan Qiu</a><sup>*,2</sup></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>: The Chinese University of Hong Kong (CUHK) <br> <sup>2</sup>: Shanghai University of Finance and Economics (SUFE) <br>NeurIPS | 2023 </span>
+            <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+          </div>
+
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title"><img src="static/images/logo.png" style="height: 80px;"> ReHLine: Regularized Composite ReLU-ReHU Loss Minimization with Linear Computation and Linear Convergence</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://www.bendai.org/" target="_blank">Ben Dai</a><sup>*,1</sup>,</span>
-                <span class="author-block">
-                  <a href="https://statr.me/about/" target="_blank">Yixuan Qiu</a><sup>*,2</sup></span>
-                  <!-- <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span> -->
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>: The Chinese University of Hong Kong (CUHK) <br> <sup>2</sup>: Shanghai University of Finance and Economics (SUFE) <br>NeurIPS | 2023 </span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://openreview.net/pdf?id=3pEBW2UPAD" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/softmin/ReHLine" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
+            <div class="publication-links">
+              <!-- Paper link -->
+              <span class="link-block">
+                <a href="https://openreview.net/forum?id=3pEBW2UPAD" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="ai ai-open-access"></i>
                 </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://openreview.net/pdf?id=3pEBW2UPAD" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
+                <span>Paper</span>
                 </a>
               </span>
+
+              <!-- PDF link -->
+              <span class="link-block">
+                <a href="https://openreview.net/pdf?id=3pEBW2UPAD" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>PDF</span>
+                </a>
+              </span>
+
+              <!-- Github link -->
+              <span class="link-block">
+                <a href="https://github.com/softmin/ReHLine" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+                </a>
+              </span>
+
+              <!-- ArXiv abstract Link -->
+              <!--
+              <span class="link-block">
+                <a href="https://openreview.net/pdf?id=3pEBW2UPAD" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="ai ai-arxiv"></i>
+                </span>
+                <span>arXiv</span>
+                </a>
+              </span>
+              -->
             </div>
           </div>
         </div>
@@ -215,21 +220,21 @@
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@article{daiqiu2023rehline,
-        title={ReHLine: Regularized Composite ReLU-ReHU Loss Minimization with Linear Computation and Linear Convergence},
-        author={Dai, Ben and Yixuan Qiu},
-        journal={Advances in Neural Information Processing Systems},
-        year={2023},
-        }</code></pre>
-    </div>
+<section class="section" id="BibTeX">
+  <div class="container">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{daiqiu2023rehline,
+    title={ReHLine: Regularized Composite ReLU-ReHU Loss Minimization with Linear Computation and Linear Convergence},
+    author={Dai, Ben and Yixuan Qiu},
+    journal={Advances in Neural Information Processing Systems},
+    year={2023},
+}</code></pre>
+  </div>
 </section>
 <!--End BibTex citation -->
 
 
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
@@ -251,5 +256,5 @@
 
     <!-- End of Statcounter Code -->
 
-  </body>
-  </html>
+</body>
+</html>
