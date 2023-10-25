@@ -40,6 +40,16 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs-bibtex@2.1.0/prism-bibtex.min.js">
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-solarizedlight.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js">
+  </script>
+
   <!-- <style>
     {
         box-sizing: border-box;
@@ -81,8 +91,8 @@
       <div class="columns is-centered">
         <!-- <a href="https://github.com/softmin/ReHLine"><img src="static/images/logo.png" align="left" height="64" /></a> -->
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">ReHLine: Regularized Composite ReLU-ReHU Loss Minimization with Linear Computation and Linear Convergence</h1>
-          <img src="static/images/logo.png" style="height: 180px;" /> 
+          <h1 class="title is-2">ReHLine: Regularized Composite ReLU-ReHU Loss Minimization with Linear Computation and Linear Convergence</h1>
+          <img src="static/images/logo.png" style="height: 160px;" /> 
           <div class="is-size-5 publication-authors">
             <!-- Paper authors -->
             <span class="author-block"><a href="https://www.bendai.org/" target="_blank">Ben Dai</a><sup>*,1</sup>,</span>
@@ -169,18 +179,30 @@
 
 <section class="section hero">
 	<div class="container">
-<div class="row">
-	<div class="left">
-	  <h2 class="title is-4">Python <img src="static/images/python.png" style="height: 30px;"></h2>
-	  <p class="hyphenate" align="justify">The <a href="https://github.com/softmin/ReHLine-python" target="_blank">ReHLine-python</a> hosts the Python version of ReHLine and its documentation.</p>
-	  <!-- <img src="https://socialify.git.ci/statmlben/rankseg/image?description=1&font=Inter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Signal&pulls=1&stargazers=1&theme=Light" alt="rankseg" width="640" height="320" /> -->
-	</div>
-	<div class="right">
-	  <h2 class="title is-4">R <img src="static/images/R.png" style="height: 30px;"></h2>
-	  <p class="hyphenate" align="justify">The <a href="https://github.com/softmin/ReHLine-r" target="_blank">ReHLine-r</a> hosts the R version of ReHLine and its documentation.</p>
-	  <!-- <img src="https://socialify.git.ci/statmlben/rankseg/image?language=1&owner=1&name=1&stargazers=1&theme=Light" alt="rankseg" width="640" height="320" /> -->
-	</div>
-</div>
+    <div class="row">
+      <div class="left">
+        <h2 class="title is-4">Github <img src="static/images/github.png" style="height: 30px;"></h2>
+        <p class="hyphenate" align="justify"> <a href="https://github.com/softmin/ReHLine" target="_blank">ReHLine</a> is the main hub of ReHLine in Github.</p>
+        <!-- <img src="https://socialify.git.ci/softmin/ReHLine/image?language=1&logo=https%3A%2F%2Frehline.github.io%2Fstatic%2Fimages%2Flogo.png&name=1&owner=1&stargazers=1&theme=Light" alt="ReHLine" width="640" height="320" /> -->
+      </div>
+      <div class="right">
+        <h2 class="title is-4">Benchmark <img src="static/images/benchmark.jpg" style="height: 30px;"></h2>
+        <p class="hyphenate" align="justify"> <a href="https://github.com/softmin/ReHLine-python" target="_blank">ReHLine-benchmark</a> hosts the benchmark of ReHLine in various ML tasks.</p>
+        <!-- <img src="https://socialify.git.ci/softmin/ReHLine-benchmark/image?language=1&logo=https%3A%2F%2Frehline.github.io%2Fstatic%2Fimages%2Flogo.png&name=1&owner=1&stargazers=1&theme=Light" alt="ReHLine-benchmark" width="640" height="320" /> -->
+      </div>
+    </div>
+  <div class="row">
+    <div class="left">
+      <h2 class="title is-4">Python <img src="static/images/python.png" style="height: 30px;"></h2>
+      <p class="hyphenate" align="justify">The <a href="https://github.com/softmin/ReHLine-python" target="_blank">ReHLine-python</a> hosts the Python version of ReHLine and its documentation.</p>
+      <!-- <img src="https://socialify.git.ci/statmlben/rankseg/image?description=1&font=Inter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Signal&pulls=1&stargazers=1&theme=Light" alt="rankseg" width="640" height="320" /> -->
+    </div>
+    <div class="right">
+      <h2 class="title is-4">R <img src="static/images/R.png" style="height: 30px;"></h2>
+      <p class="hyphenate" align="justify">The <a href="https://github.com/softmin/ReHLine-r" target="_blank">ReHLine-r</a> hosts the R version of ReHLine and its documentation.</p>
+      <!-- <img src="https://socialify.git.ci/statmlben/rankseg/image?language=1&owner=1&name=1&stargazers=1&theme=Light" alt="rankseg" width="640" height="320" /> -->
+    </div>
+  </div>
 </div>
 </section>
 
@@ -222,17 +244,17 @@
 <!--BibTex citation -->
 <section class="section" id="BibTeX">
   <div class="container">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{daiqiu2023rehline,
-    title={ReHLine: Regularized Composite ReLU-ReHU Loss Minimization with Linear Computation and Linear Convergence},
-    author={Dai, Ben and Yixuan Qiu},
-    journal={Advances in Neural Information Processing Systems},
-    year={2023},
-}</code></pre>
+  <h2 class="title">BibTeX</h2>
+  <div class="demo-highlight"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">daiqiu2023rehline</span><span class="p">,</span>
+    <span class="w">     </span><span class="na">title</span><span class="p">=</span><span class="s">{ReHLine: Regularized Composite ReLU-ReHU Loss Minimization with Linear Computation and Linear Convergence}</span><span class="p">,</span>
+    <span class="w">     </span><span class="na">author</span><span class="p">=</span><span class="s">{Dai, Ben and Yixuan Qiu}</span><span class="p">,</span>
+    <span class="w">     </span><span class="na">journal</span><span class="p">=</span><span class="s">{Advances in Neural Information Processing Systems}</span><span class="p">,</span>
+    <span class="w">     </span><span class="na">year</span><span class="p">=</span><span class="m">2023</span><span class="p">}</span>
+  </pre></div>
+
   </div>
 </section>
 <!--End BibTex citation -->
-
 
 <footer class="footer">
   <div class="container">
