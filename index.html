@@ -274,7 +274,7 @@
         <div class="content has-text-justified">
           <p>
             Empirical risk minimization (ERM) is a crucial framework that offers a general approach to handling a broad range of machine learning tasks. In this paper, we propose a novel algorithm, called ReHLine, for minimizing a set of regularized ERMs with convex piecewise linear-quadratic loss functions and optional linear constraints. The proposed algorithm can effectively handle diverse combinations of loss functions, regularizations, and constraints, making it particularly well-suited for complex domain-specific problems. Examples of such problems include FairSVM, elastic net regularized quantile regression, Huber minimization, etc.
-            In addition, ReHLine enjoys a provable linear convergence rate and exhibits a per-iteration computational complexity that scales linearly with the sample size. The algorithm is implemented with both Python and R interfaces, and its performance is benchmarked on various tasks and datasets. Our experimental results demonstrate that ReHLine significantly surpasses generic optimization solvers in terms of computational efficiency on large-scale datasets. Moreover, it also outperforms specialized solvers such as liblinear in SVM, hqreg in Huber minimization and lightning(SAGA, SAG, SDCA, SVRG) in smooth SVM, exhibiting exceptional flexibility and efficiency.
+            In addition, ReHLine enjoys a provable linear convergence rate and exhibits a per-iteration computational complexity that scales linearly with the sample size. The algorithm is implemented with both Python and R interfaces, and its performance is benchmarked on various tasks and datasets. Our experimental results demonstrate that ReHLine significantly surpasses generic optimization solvers in terms of computational efficiency on large-scale datasets. Moreover, it also outperforms specialized solvers such as Liblinear in SVM, hqreg in Huber minimization, and Lightning (SAGA, SAG, SDCA, SVRG) in smoothed SVM, exhibiting exceptional flexibility and efficiency.
           </p>
         </div>
       </div>
@@ -351,10 +351,10 @@
 <section class="section" id="BibTeX">
   <div class="container">
   <h2 class="title">BibTeX</h2>
-  <div class="demo-highlight"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">daiqiu2023rehline</span><span class="p">,</span>
+  <div class="demo-highlight"><pre><span></span><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">daiqiu2023rehline</span><span class="p">,</span>
     <span class="w">     </span><span class="na">title</span><span class="p">=</span><span class="s">{ReHLine: Regularized Composite ReLU-ReHU Loss Minimization with Linear Computation and Linear Convergence}</span><span class="p">,</span>
     <span class="w">     </span><span class="na">author</span><span class="p">=</span><span class="s">{Dai, Ben and Yixuan Qiu}</span><span class="p">,</span>
-    <span class="w">     </span><span class="na">journal</span><span class="p">=</span><span class="s">{Advances in Neural Information Processing Systems}</span><span class="p">,</span>
+    <span class="w">     </span><span class="na">booktitle</span><span class="p">=</span><span class="s">{Advances in Neural Information Processing Systems}</span><span class="p">,</span>
     <span class="w">     </span><span class="na">year</span><span class="p">=</span><span class="m">2023</span><span class="p">}</span>
   </pre></div>
 
